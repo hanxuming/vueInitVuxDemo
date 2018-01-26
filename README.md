@@ -1,4 +1,4 @@
-# vuesample
+# vueInitVuxDemo
 
 > a vue project
 
