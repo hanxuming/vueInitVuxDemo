@@ -1,10 +1,19 @@
 # vueInitVuxDemo
 
-> a vue project
+> a vue project 以vue webpack工程为基础实现各种示例
 
 ## Build Setup
 
 ``` bash
+# 1.返回示例
+# 2.切换示例
+# 3.表单示例
+# 4.vuex示例
+# 5.toggleClass样式和过滤器
+# 6.全选
+# 7.登陆功能（暂无：app iam登陆方式和token登陆方式）
+# 8.列表页
+# 9.上拉加载，下拉刷新（mescroll）
 # install dependencies
 npm install
 
