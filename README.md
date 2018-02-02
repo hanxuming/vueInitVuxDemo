@@ -17,11 +17,11 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-##1、vux使用示例以及常用样式
+## 1、vux使用示例以及常用样式
 ```bash
 #1、页面头部示例
 ```
-##2、案例以及工程示例
+## 2、案例以及工程示例
 ```bash
 #1、切换示例
 #2、表单示例
@@ -31,7 +31,7 @@ npm run build --report
 #6、列表页
 #7、上拉加载、下拉刷新（mescroll）
 ```
-##3、常用方法库
+## 3、常用方法库
 ```bash
 #暂无
 ```
