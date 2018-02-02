@@ -3,21 +3,30 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 import date from '../page/demo/date.vue'
-import vuxlogin from '../page/vux/login'
-import example from '../page/demo/example.vue'
-import form from '../page/demo/form.vue'
-import goBack from '../page/demo/goBack.vue'
-import vuexTest from '../page/demo/vuexTest.vue'
-import toggleClass from '../page/demo/toggleClass.vue'
-import allCheck from '../page/demo/allCheck.vue'
-import login from '../page/demo/login.vue'
-import keepAlive from '../page/demo/keepAlive.vue'
-import list from '../page/demo/list.vue'
-import listPage from '../page/demo/listPage.vue'
-import scrollTest from '../page/demo/scrollTest.vue'
 import hasShipped from '../page/children/hasShipped.vue'
 import noShipped from '../page/children/noShipped.vue'
 import allShipped from '../page/children/allShipped.vue'
+
+//vux使用示例以及常用样式部分--style
+import goBack from '../page/style/goBack.vue'
+
+//案例及工程示例部分--demo
+import example from '../page/demo/example.vue'
+import form from '../page/demo/form.vue'
+import vuexTest from '../page/demo/vuexTest.vue'
+import toggleClass from '../page/demo/toggleClass.vue'
+import allCheck from '../page/demo/allCheck.vue'
+import listPage from '../page/demo/listPage.vue'
+import scrollTest from '../page/demo/scrollTest.vue'
+
+//常用方法库使用部分--method
+
+
+//列表页面部分
+import index from '../page/list/index.vue'
+import demoList from '../page/list/demoList.vue'
+import methodList from '../page/list/methodList.vue'
+import vuxList from '../page/list/vuxList.vue'
 
 //异步加载组件
 // const date = r => require.ensure([], () => r(require('../page/demo/date.vue')), 'chunkname1')
@@ -36,13 +45,28 @@ export default new Router({
   routes: [
      /***测试首页 */
     {
-     path: '/',
+    path: '/',
+    component: index,
+    name:'index'
+    },
+    {
+    path: '/demoList',
+    component: demoList,
+    name:'demoList'
+    },
+    {
+    path: '/methodList',
+    component: methodList,
+    name:'methodList'
+    },
+    {
+    path: '/vuxList',
+    component: vuxList,
+    name:'vuxList'
+    },
+    {
+     path: '/date',
      component: date
-     },
-     {
-     path: '/vuxlogin',
-     name:'vuxlogin',
-     component: vuxlogin
      },
      {
      path: '/example',
@@ -56,7 +80,7 @@ export default new Router({
      meta : {title : "表单页", description : "form"}
      },
      {
-     path: '/goBack/:id',
+     path: '/goBack/',
      component: goBack,
      name:'goBack'
      },
@@ -74,21 +98,6 @@ export default new Router({
       path: '/allCheck',
       component: allCheck,
       name:'allCheck'
-     },
-     {
-      path: '/login',
-      component: login,
-      name:'login'
-     },
-     {
-      path: '/keepAlive',
-      component: keepAlive,
-      name:'keepAlive'
-     },
-     {
-      path: '/list',
-      component: list,
-      name:'list'
      },
      {
       path: '/listPage',

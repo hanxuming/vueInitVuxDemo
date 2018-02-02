@@ -22,7 +22,10 @@
 			XHeader
 		},
 		methods : { 
-			...mapActions({increment:'increment',decrement:'decrement'})
+			...mapActions({increment:'increment',decrement:'decrement'}),
+			test (){
+
+			}
 		}
 	}
 </script>

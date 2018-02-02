@@ -13,8 +13,12 @@
 		},
 		created () {
 			//注意是 route
-			const paramsId = this.$route.params.id;
-			console.log(paramsId);
+			// const paramsId = this.$route.params.id;
+			// console.log(paramsId);
+			//  this.$vux.loading.show({
+			// 	text: 'Loading'
+			//  })
+			//  this.$vux.loading.hide();
 		},
 		components : {
 			XHeader

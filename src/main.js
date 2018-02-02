@@ -9,11 +9,9 @@ import FastClick from 'fastclick'
 /****下拉刷新 */
 import VueScroller from 'vue-scroller'
 Vue.use(VueScroller)
-Vue.config.productionTip = false
+Vue.config.productionTip = true;
 //使用es6-promise来解析es6
 require('es6-promise').polyfill()
-Vue.config.silent = false;
-console.log('vueInitVuxDemo：' + JSON.stringify(Vue.config));
 //使用Vuex
 Vue.use(Vuex)
 FastClick.attach(document.body)
